@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+django-collectstatic = "python manage.py collectstatic --noinput"
+django-migrate = "python manage.py migrate"
+django-qcluster = "python manage.py qcluster"
+
+[packages]
+django = "*"
+django-filter = "*"
+"psycopg2" = "*"
+djangorestframework = "*"
+drf-yasg = "*"
+djangorestframework-simplejwt = "*"
+"psycopg2-binary" = "*"
+dj-database-url = "*"
+django-q = "*"
+pandas = "*"
+numpy = "*"
+django-import-export = "*"
+
+[dev-packages]
+markdown = "*"
+ipython = "*"
+pylint = "*"
+django-cors-headers = "*"
+drf-yasg = "*"
+
+[requires]
+python_version = "3.6"
